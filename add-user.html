@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter Utilisateurs</title>
+    <style>
+      #titre {
+          color: red;
+          background: lightcoral
+      }  
+      .titre{
+          font-size: 50px;
+          color: blue
+      }
+    </style>
+</head>
+<body>
+    <h1 class="titre">Titre 1</h1>
+    <h2 style="border: 1px solid lightblue;">Titre 2</h1>
+    <fieldset>
+        <legend>Nouveau Utilisateur</legend>
+        <form method="POST">
+            <p><label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom">
+            </p>
+            <p><label for="nom">Prénom</label>
+                <input type="text" name="nom" id="nom">
+            </p>
+            <p><label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p><label for="date">Date de naissance</label>
+                <input type="date" name="date" id="date">
+            </p>
+            <p><label for="age">Age</label>
+                <input type="number" name="age" id="age">
+            </p>
+            <p><label for="langage">Langage favoris</label>
+                <select name="langage" id="langages">
+                    <option value="">PHP</option>
+                    <option value="">JAVA</option>
+                    <option value="">Python</option>
+                </select>
+            </p>
+            <p><label for="langage">Etat</label>
+               <input type="radio" name="etat" id="etat" checked>active
+               <input type="radio" name="etat" id="etat">desactive
+            </p>
+            <p>
+                <label for="hobbies">Hobbies</label>
+                <input type="checkbox" name="checkbox" id="">Swimming
+                <input type="checkbox" name="checkbox" id="">Dance
+                <input type="checkbox" name="checkbox" id="">Programming
+                <input type="checkbox" name="checkbox" id="">Singing
+            </p>
+            <p><input type="submit" value="enregistrer"></p>
+            <p><button type="button">Bouton</button></p>
+            <p><button type="reset">Cancel</button></p>
+            <p><button type="submit">Server</button></p>
+        </form>
+    </fieldset>
+    
+</body>
+</html>
